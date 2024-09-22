@@ -51,9 +51,15 @@ export const PostReadIndicator = styled('div')`
 
 export const PostSource = styled('div')`
   display: flex;
+  gap: 5px; 
+  align-items: center;
   color: ${({ theme }) => theme.colorPalette.text.secondary};
 
   a {
+    max-width: 150px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-decoration: none;
     margin: 0 0.5rem;
     color: ${({ theme }) => theme.colorPalette.link.color};
@@ -64,6 +70,7 @@ export const PostSource = styled('div')`
   }
 
   span {
+    white-space: nowrap;
     margin: 0 0.5rem;
   }
 `;
